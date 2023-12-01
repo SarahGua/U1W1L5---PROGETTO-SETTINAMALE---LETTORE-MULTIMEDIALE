@@ -1,33 +1,33 @@
-public class Immagine extends ElementoMultimediale{
+public class Immagine extends ElementoMultimediale implements Luminosità{
     //ATTRIBUTI
     public int luminosita;
 
-    public Immagine(String titolo) {
+    public Immagine(String titolo, int luminosita) {
         super(titolo);
+        this.luminosita = luminosita;
     }
 
     //METODI
-    public void Show(int luminosita, String titolo){
+    public void show(){
         StringBuilder asterischi = new StringBuilder();
 
         for(int i = 0; i < luminosita; i++){
             asterischi.append("*");
         }
         System.out.println(titolo + asterischi);
-
-//        for(int i = 0; i < luminosita; i++){
-//            System.out.println(titolo + asterischi);
-//        }
-
     }
 
-    public void aumentaLuminosita(){
+
+    @Override
+    public void alzaLuminosita() {
         luminosita++;
     }
 
-    public void diminuisciLuminosita(){
-        if(luminosita > 0) {
+    @Override
+    public void abbassaLuminosita() {
+        if(luminosita > 0){
             luminosita--;
         }
     }
+
 }

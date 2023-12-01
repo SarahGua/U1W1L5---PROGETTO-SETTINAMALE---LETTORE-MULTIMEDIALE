@@ -1,6 +1,7 @@
 public abstract class ElementoMultimediale {
     //ATTRIBUTI
     public String titolo;
+    public int volume;
 
     //COSTRUTTORE
     public ElementoMultimediale(String titolo){
@@ -8,5 +9,5 @@ public abstract class ElementoMultimediale {
     }
 
     //METODI
-//    public void play(){};
+
 }

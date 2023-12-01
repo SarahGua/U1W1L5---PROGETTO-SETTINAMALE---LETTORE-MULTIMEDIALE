@@ -1,3 +1,4 @@
 public interface Player {
-    public default void play(){}
+    public void play();
+
 }
