@@ -9,12 +9,25 @@ public class Immagine extends ElementoMultimediale{
     //METODI
     public void Show(int luminosita, String titolo){
         StringBuilder asterischi = new StringBuilder();
+
         for(int i = 0; i < luminosita; i++){
-            System.out.println(titolo + asterischi.append("*"));
+            asterischi.append("*");
         }
+        System.out.println(titolo + asterischi);
 
-
+//        for(int i = 0; i < luminosita; i++){
+//            System.out.println(titolo + asterischi);
+//        }
 
     }
 
+    public void aumentaLuminosita(){
+        luminosita++;
+    }
+
+    public void diminuisciLuminosita(){
+        if(luminosita > 0) {
+            luminosita--;
+        }
+    }
 }

@@ -3,13 +3,13 @@
 public class Main {
     public static void main(String[] args) {
         Immagine imm1 = new Immagine("Ciao");
-        imm1.Show(2, "hola");
+        imm1.Show(4, "hola");
 
         Video video1 = new Video("video");
         video1.play();
 
-        RegistrazioneAudio audio1 = new RegistrazioneAudio("audio");
-        audio1.play();
+//        RegistrazioneAudio audio1 = new RegistrazioneAudio("audio");
+//        audio1.play();
 
     }
 }

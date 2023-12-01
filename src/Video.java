@@ -1,6 +1,6 @@
-public class Video extends ElementoMultimediale {
+public class Video extends ElementoMultimediale implements Player{
     //ATTRIBUTI
-    public int duarata;
+    public int durata;
     public int volume;
     public int luminosita;
 
@@ -10,9 +10,14 @@ public class Video extends ElementoMultimediale {
     }
 
     //METODI
-    public void play(){
-        System.out.println(titolo + "!");
+    public interface Player{
+        public default void play(String titolo, int volume, int durata){
+            
+        };
     }
+
+
+
 
     public void aumentaLuminosita(){
 

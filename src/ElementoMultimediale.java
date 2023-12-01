@@ -6,4 +6,7 @@ public abstract class ElementoMultimediale {
     public ElementoMultimediale(String titolo){
         this.titolo = titolo;
     }
+
+    //METODI
+//    public void play(){};
 }

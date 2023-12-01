@@ -9,9 +9,7 @@ public class RegistrazioneAudio extends ElementoMultimediale {
     }
 
     //METODI
-    public void play(){
-        System.out.println(titolo + "!");
-    }
+
 
     public void aumentaVolume(){
 
@@ -20,4 +18,5 @@ public class RegistrazioneAudio extends ElementoMultimediale {
     public void diminuisciVolume(){
 
     }
+
 }
