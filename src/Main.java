@@ -3,7 +3,7 @@
 public class Main {
     public static void main(String[] args) {
         Immagine imm1 = new Immagine("Ciao");
-        imm1.Show();
+        imm1.Show(2, "hola");
 
         Video video1 = new Video("video");
         video1.play();
